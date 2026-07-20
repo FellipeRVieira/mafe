@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import 'tailwindcss';
+@theme { --font-sans: 'Inter', sans-serif; --font-serif: 'Playfair Display', serif; --font-script: 'Allura', cursive; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; font-family: 'Inter', sans-serif; background: #fff7ed; }
+h1, h2, h3, p { margin: 0; }
+h1, h2 { font-family: 'Playfair Display', serif; font-weight: 500; }
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
