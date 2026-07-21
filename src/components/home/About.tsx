@@ -3,4 +3,55 @@ import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { Reveal } from '@/components/ui/Reveal'
 const aboutImage = 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1100&q=90'
-export function About() { return <section id="sobre" className="py-24"><Container><div className="grid items-center gap-12 rounded-3xl bg-[#fff0df] p-7 sm:p-12 lg:grid-cols-2 lg:gap-20 lg:p-16"><Reveal direction="left"><p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[.2em] text-[#f97316]"><Sparkles size={14} /> Feito para histórias</p><h2 className="mt-4 max-w-md text-4xl leading-tight text-[#211b18] sm:text-5xl">Sua fotografia merece uma entrega memorável.</h2><p className="mt-6 max-w-lg text-sm leading-7 text-[#6b625d]">A MAFE transforma a forma como fotógrafos entregam suas histórias. Uma plataforma elegante, intuitiva e feita para valorizar cada clique — do seu olhar até as mãos de quem viveu o momento.</p><a href="#contato" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#f45d00] hover:gap-3">Conheça a MAFE <ArrowUpRight size={16} /></a></Reveal><Reveal direction="right"><motion.div whileHover={{ scale: 1.015 }} className="relative overflow-hidden rounded-2xl"><img src={aboutImage} alt="Casal compartilhando um momento em seu casamento" className="h-[300px] w-full object-cover sm:h-[390px]" /><div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" /><div className="absolute bottom-6 left-6 rounded-xl bg-white/90 px-4 py-3 text-xs font-medium text-[#342b25] shadow-lg backdrop-blur">Memórias para sentir de novo.</div></motion.div></Reveal></div></Container></section> }
+export function About()
+{ 
+    return <section id="sobre" className="py-24">
+
+        <Container>
+
+            <div className="grid items-center gap-12 rounded-3xl bg-[#fff0df] p-7 sm:p-12 lg:grid-cols-2 lg:gap-20 lg:p-16">
+
+                <Reveal direction="left">
+
+                    <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[.2em] text-[#f97316]">
+                        <Sparkles size={14} /> Feito para histórias
+                    </p>
+
+                    <h2 className="mt-4 max-w-md text-4xl leading-tight text-[#211b18] sm:text-5xl">
+                        Sua fotografia merece uma entrega memorável.
+                    </h2>
+                    
+                    <p className="mt-6 max-w-lg text-sm leading-7 text-[#6b625d]">
+                        A MAFE transforma a forma como fotógrafos entregam suas histórias. Uma plataforma elegante, intuitiva e feita para valorizar
+                         cada clique — do seu olhar até as mãos de quem viveu o momento.
+                    </p>
+
+                    <a href="#contato" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#f45d00] hover:gap-3">
+                        Conheça a MAFE <ArrowUpRight size={16} />
+                    </a>
+
+                </Reveal>
+                
+                <Reveal direction="right">
+
+                    <motion.div whileHover={{ scale: 1.015 }} className="relative overflow-hidden rounded-2xl">
+
+                        <img src={aboutImage} alt="Casal compartilhando um momento em seu casamento" 
+                            className="h-[300px] w-full object-cover sm:h-[390px]" />
+                        
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+
+                        <div className="absolute bottom-6 left-6 rounded-xl bg-white/90 px-4 py-3 text-xs font-medium text-[#342b25] shadow-lg
+                             backdrop-blur">Memórias para sentir de novo.
+                        </div>
+
+                    </motion.div>
+
+                </Reveal>
+
+            </div>
+
+        </Container>
+        
+    </section> 
+}
